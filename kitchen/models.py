@@ -32,6 +32,19 @@ class Cook(AbstractUser):
         return reverse("kitchen:cook-detail", kwargs={"pk": self.pk})
 
 
+class Ingredient(models.Model):
+    name = models.CharField(max_length=255, unique=True)
+
+    class Meta:
+        ordering = ["name"]
+
+    def __str__(self):
+        return self.name
+
+    def get_absolute_url(self):
+        return reverse("kitchen:ingredient-detail", kwargs={"pk": self.pk})
+
+
 class Dish(models.Model):
     name = models.CharField(max_length=255, unique=True)
     description = models.TextField()
