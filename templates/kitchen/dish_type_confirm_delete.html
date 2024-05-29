@@ -1,0 +1,33 @@
+{% extends "layouts/base_sections.html" %}
+{% load crispy_forms_filters %}
+
+{% load static %}
+
+{% block title %} Material Kit 2 by Creative Tim {% endblock title %}
+
+{% block body %} class="index-page bg-gray-200" {% endblock body %}
+
+{% block content %}
+
+<header class="header-2">
+  <div class="page-header min-vh-100 relative" 
+       style="background-image: url('{% static 'img/curved-images/type_dishes_2.png' %}')">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 text-center mx-auto">
+          <h2 class="text-white pt-3 mt-n5">Delete {{ dishtype.name|slice:50 }} Dish Type?</h2>
+          <form action="" method="post">
+            {% csrf_token %}
+              <input type="submit" value="Yes" class="btn bg-gradient-primary me-4">
+              <a href="{% url 'kitchen:dish-type-list' %}" class="btn bg-gradient-secondary link-to-page me-4">No</a>
+          </form> 
+        </div>
+      </div>
+    </div>
+
+    {% include "includes/waves.html" %}
+    
+  </div>
+</header>
+
+{% endblock content %}

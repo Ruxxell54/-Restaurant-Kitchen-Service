@@ -1,0 +1,87 @@
+{% extends "layouts/base_sections.html" %}
+{% load crispy_forms_filters %}
+
+{% load static %}
+
+{% block title %} Material Kit 2 by Creative Tim {% endblock title %}
+
+{% block body %} class="index-page bg-gray-200" {% endblock body %}
+
+{% block content %}
+  <header class="header-2">
+  <div class="page-header min-vh-100 relative"
+       style="background-image: url('{% static 'img/curved-images/ingredients_2.png' %}')">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 text-center mx-auto">
+          <h2 class="text-white pt-4 mt-n5">Ingredient List</h2>
+            
+            <div class="row text-center py-2 mt-3 align-items-center">
+              <div class="input-group mb-2">
+                <div class="col">
+                  {% block search_form %}
+                    {% include "includes/search_form.html" %}
+                  {% endblock %}
+                </div>
+                <div class="col"></div> 
+                <div class="col text-end">
+                  <a href="{% url 'kitchen:ingredient-create' %}" class="btn btn-primary link-to-page">
+                    ADD NEW
+                  </a>
+                </div> 
+              </div>
+            </div>
+
+          {% if ingredient_list %}
+            <table class="table table-light table-striped table-hover">
+              <tr class="table table-dark table-hover">
+                <th>ID</th>
+                <th>Name</th>
+                <th>Update</th>
+                <th>Delete</th>
+              </tr>
+
+              {% for ingredient in ingredient_list %}
+                <tr class="table-striped">
+                  <td>
+                    {{ ingredient.id }}
+                  </td>
+                  <td   class="element-slice">
+                    <a href="{{ ingredient.get_absolute_url }}" data-bs-toggle="tooltip" title="{{ ingredient.name }}">
+                      {{ ingredient.name }}</a>
+                  </td>
+                  <td>
+                    <a href="{% url 'kitchen:ingredient-update' pk=ingredient.id %}">
+                      Update
+                    </a>
+                  </td>
+                  <td>
+                    <a style="color: red"
+                       href="{% url 'kitchen:ingredient-delete' pk=ingredient.id %}">
+                      Delete
+                    </a>
+                  </td>
+                </tr>
+              {% endfor %}
+            </table>
+
+          {% else %}
+            <p>There are no ingredients in the kitchen.</p>
+          {% endif %}
+        </div>
+        <div class="col-lg-7 text-center mx-auto">
+        {% block pagination %}
+
+          {% include "includes/pagination.html" %}
+
+        {% endblock %}
+        </div>
+      </div>
+    </div>
+  
+    {% include "includes/waves.html" %}
+  
+  </div>
+</header>
+  
+{% endblock content %}

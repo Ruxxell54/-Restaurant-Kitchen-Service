@@ -1,0 +1,34 @@
+{% extends "layouts/base_sections.html" %}
+
+{% load crispy_forms_filters %}
+
+{% load static %}
+
+{% block title %} Material Kit 2 by Creative Tim {% endblock title %}
+
+{% block body %} class="index-page bg-gray-200" {% endblock body %}
+
+{% block content %}
+
+<header class="header-2">
+  <div class="page-header min-vh-100 relative" 
+       style="background-image: url('{% static 'img/curved-images/ingredients_2.png' %}')">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 text-center mx-auto">
+          <h1 class="text-white pt-3 mt-n5">{{ object|yesno:"Update,Create" }} ingredient</h1>
+          <form action="" method="post" novalidate>
+            {% csrf_token %}
+            {{ form|crispy }}
+            <input type="submit" value="Submit" class="btn btn-primary link-to-page">
+          </form>  
+        </div>
+      </div>
+    </div>
+
+    {% include "includes/waves.html" %}
+    
+  </div>
+</header>
+
+{% endblock content %}

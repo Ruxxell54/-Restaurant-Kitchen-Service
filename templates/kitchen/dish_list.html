@@ -1,0 +1,125 @@
+{% extends "layouts/base_sections.html" %}
+{% load crispy_forms_filters %}
+
+{% load static %}
+
+{% block title %} Material Kit 2 by Creative Tim {% endblock title %}
+
+{% block body %} class="index-page bg-gray-200" {% endblock body %}
+
+{% block content %}
+  <header class="header-2">
+  <div class="page-header min-vh-100 relative"
+       style="background-image: url('{% static 'img/curved-images/8810183.jpg' %}')">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 text-center mx-auto">
+          <h2 class="text-white pt-4 mt-n5">Dish List</h2>
+            
+            <div class="row text-center py-2 mt-3 align-items-center">
+              <div class="input-group mb-2">
+                <div class="col">
+                  {% block search_form %}
+                    {% include "includes/search_form.html" %}
+                  {% endblock %}
+                </div>
+                <div class="col"></div> 
+                <div class="col text-end">
+                  <a href="{% url 'kitchen:dish-create' %}" class="btn btn-primary link-to-page">
+                    ADD NEW
+                  </a>
+                </div> 
+              </div>
+            </div>
+
+          {% if dish_list %}
+            <table class="table table-light table-striped table-hover">
+              <tr class="table table-dark table-hover">
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Dish Type</th>
+                <th>Cooks</th>
+                <th>Update</th>
+                <th>Delete</th>
+                {% if request.resolver_match.kwargs.pk == user.id or request.resolver_match.kwargs.pk == None %}
+                  <th>Cooking</th>
+                {% endif %}  
+              </tr>
+
+              {% for dish in dish_list %}
+                <tr class="table-striped">
+                  <td>
+                    {{ dish.id }}
+                  </td>
+                  <td class="element-slice">
+                    <a href="{{ dish.get_absolute_url }}" \
+                       data-bs-toggle="tooltip" \
+                       title="{{  dish.name }}">{{ dish.name }}</a>
+                  </td>
+                  <td>
+                    {{ dish.price }}
+                  </td>
+                  <td class="element-slice" data-bs-toggle="tooltip" title="{{ dish.dish_type.name }}">
+                    {{ dish.dish_type.name }}
+                  </td>
+                  <td>
+                    {{ dish.cooks.count }}
+                  </td>
+                  <td>
+                    <a href="{% url 'kitchen:dish-update' pk=dish.id %}">
+                      Update
+                    </a>
+                  </td>
+                  <td>
+                    <a style="color: red"
+                       href="{% url 'kitchen:dish-delete' pk=dish.id %}">
+                      Delete
+                    </a>
+                  </td>
+                  {% if request.resolver_match.kwargs.pk == user.id  or request.resolver_match.kwargs.pk == None %}
+                  <td>
+                    {% if dish in user.dishes.all %}
+                         {% if request.resolver_match.kwargs.pk == user.id %}
+                           <form action="{% url 'kitchen:toggle-dish-to-cook-delete' pk=dish.id cook_id=user.id %}" method="post" novalidate>
+                             {% csrf_token %}
+                             <input type="submit" value="Remove" class="btn btn-primary btn-sm mb-0">
+                           </form>
+                         {% else %}
+                           <form action="{% url 'kitchen:toggle-cook-to-dish-assign' pk=user.id dish_id=dish.id current_page=page_obj.number %}" method="post" novalidate>
+                             {% csrf_token %}
+                             <input type="submit" value="Remove" class="btn btn-primary btn-sm mb-0"> 
+                           </form>
+                         {% endif %}
+                    {% else %}
+                      <form action="{% url 'kitchen:toggle-cook-to-dish-assign' pk=user.id dish_id=dish.id current_page=page_obj.number %}" method="post">
+                        {% csrf_token %}
+                        <input type="submit" value="Assign me" class="btn bg-gradient-info btn-sm mb-0">
+                      </form>
+                    {% endif %}
+                  </td>
+                  {% endif %}
+                </tr>
+              {% endfor %}
+            </table>
+
+          {% else %}
+            <p>There are no dish in the kitchen.</p>
+          {% endif %}
+        </div>
+        <div class="col-lg-7 text-center mx-auto">
+          {% block pagination %}
+
+            {% include "includes/pagination.html" %}
+
+          {% endblock %}
+        </div>
+      </div>
+    </div>
+  
+    {% include "includes/waves.html" %}
+  
+  </div>
+</header>
+  
+{% endblock content %}
