@@ -17,20 +17,14 @@ from kitchen.models import Cook, Dish, DishType, Ingredient
 class UserLoginForm(AuthenticationForm):
     username = UsernameField(
         widget=forms.TextInput(
-            attrs={"class":
-                   "form-control form-control-lg",
-                   "placeholder": "Username"
-                   }
+            attrs={"class": "form-control form-control-lg", "placeholder": "Username"}
         )
     )
     password = forms.CharField(
         label=_("Password"),
         strip=False,
         widget=forms.PasswordInput(
-            attrs={"class":
-                   "form-control form-control-lg",
-                   "placeholder": "Password"
-                   }
+            attrs={"class": "form-control form-control-lg", "placeholder": "Password"}
         ),
     )
 
@@ -94,10 +88,7 @@ class UserSetPasswordForm(SetPasswordForm):
 class UserPasswordResetForm(PasswordResetForm):
     email = forms.EmailField(
         widget=forms.EmailInput(
-            attrs={"class":
-                   "form-control form-control-lg",
-                   "placeholder": "Email"
-                   }
+            attrs={"class": "form-control form-control-lg", "placeholder": "Email"}
         )
     )
 
@@ -106,10 +97,7 @@ class RegistrationForm(UserCreationForm):
     password1 = forms.CharField(
         label=_("Password"),
         widget=forms.PasswordInput(
-            attrs={"class":
-                   "form-control form-control-lg",
-                   "placeholder": "Password"
-                   }
+            attrs={"class": "form-control form-control-lg", "placeholder": "Password"}
         ),
     )
     password2 = forms.CharField(
@@ -137,10 +125,7 @@ class RegistrationForm(UserCreationForm):
                 }
             ),
             "email": forms.EmailInput(
-                attrs={"class":
-                       "form-control form-control-lg",
-                       "placeholder": "Email"
-                       }
+                attrs={"class": "form-control form-control-lg", "placeholder": "Email"}
             ),
         }
 
@@ -168,11 +153,7 @@ class CookSearchForm(forms.Form):
         max_length=255,
         required=False,
         label="",
-        widget=forms.TextInput(
-            attrs={
-                "placeholder": "Search by Username"
-            }
-        )
+        widget=forms.TextInput(attrs={"placeholder": "Search by Username"}),
     )
 
 
@@ -191,22 +172,20 @@ class CookForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         if self.instance.pk:
-            self.fields['dishes'].initial = self.instance.dishes.all()
+            self.fields["dishes"].initial = self.instance.dishes.all()
 
     dishes = forms.ModelMultipleChoiceField(
-        queryset=Dish.objects.all(),
-        required=False,
-        widget=SelectMultiple
+        queryset=Dish.objects.all(), required=False, widget=SelectMultiple
     )
 
     class Meta:
         model = Cook
         fields = [
-            'username',
-            'first_name',
-            'last_name',
-            'prax_years',
-            'dishes',
+            "username",
+            "first_name",
+            "last_name",
+            "prax_years",
+            "dishes",
         ]
 
 

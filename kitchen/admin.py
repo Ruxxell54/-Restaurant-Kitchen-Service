@@ -40,5 +40,13 @@ class CookAdmin(UserAdmin):
 
 @admin.register(Dish)
 class DishAdmin(admin.ModelAdmin):
-    search_fields = ("name", "cooks",)
-    list_filter = ("name", "price", "cooks", "ingredients",)
+    search_fields = (
+        "name",
+        "cooks",
+    )
+    list_filter = (
+        "name",
+        "price",
+        "cooks",
+        "ingredients",
+    )

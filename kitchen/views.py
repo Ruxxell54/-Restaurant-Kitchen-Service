@@ -1,11 +1,13 @@
 from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.contrib.auth.views import (LoginView,
-                                       PasswordResetView,
-                                       PasswordChangeView,
-                                       PasswordResetConfirmView,
-                                       PasswordContextMixin)
+from django.contrib.auth.views import (
+    LoginView,
+    PasswordResetView,
+    PasswordChangeView,
+    PasswordResetConfirmView,
+    PasswordContextMixin,
+)
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect, resolve_url, get_object_or_404
 from django.urls import reverse_lazy
@@ -14,18 +16,20 @@ from django.views import generic, View
 from django.views.generic import TemplateView
 from django.utils.translation import gettext as _
 
-from kitchen.forms import (UserLoginForm,
-                           UserPasswordResetForm,
-                           RegistrationForm,
-                           UserPasswordChangeForm,
-                           UserSetPasswordForm,
-                           IngredientSearchForm,
-                           CookSearchForm,
-                           CookCreationForm,
-                           CookForm,
-                           DishSearchForm,
-                           DishCreationForm,
-                           ToggleDishToCookDeleteForm)
+from kitchen.forms import (
+    UserLoginForm,
+    UserPasswordResetForm,
+    RegistrationForm,
+    UserPasswordChangeForm,
+    UserSetPasswordForm,
+    IngredientSearchForm,
+    CookSearchForm,
+    CookCreationForm,
+    CookForm,
+    DishSearchForm,
+    DishCreationForm,
+    ToggleDishToCookDeleteForm,
+)
 from kitchen.models import Ingredient, DishType, Cook, Dish
 from kitchen_service import settings
 
@@ -176,7 +180,7 @@ class CookUpdateView(LoginRequiredMixin, generic.UpdateView):
     def form_valid(self, form):
         response = super().form_valid(form)
         cook_instance = form.instance
-        dishes = form.cleaned_data['dishes']
+        dishes = form.cleaned_data["dishes"]
         cook_instance.dishes.clear()
         for dish in dishes:
             cook_instance.dishes.add(dish)
@@ -240,7 +244,7 @@ class UserLoginView(LoginView):
 
 def logout_view(request):
     logout(request)
-    return redirect('/accounts/login')
+    return redirect("/accounts/login")
 
 
 class UserPasswordResetView(PasswordResetView):
