@@ -21,7 +21,6 @@ class DishType(models.Model):
 class Cook(AbstractUser):
     years_of_experience = models.PositiveSmallIntegerField(default=0)
 
-
     groups = models.ManyToManyField(
         'auth.Group',
         related_name='cook_set',

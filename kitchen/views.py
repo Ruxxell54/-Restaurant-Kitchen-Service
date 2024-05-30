@@ -1,7 +1,11 @@
 from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.contrib.auth.views import (LoginView, PasswordResetView, PasswordChangeView, PasswordResetConfirmView, PasswordContextMixin)
+from django.contrib.auth.views import (LoginView,
+                                       PasswordResetView,
+                                       PasswordChangeView,
+                                       PasswordResetConfirmView,
+                                       PasswordContextMixin)
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect, resolve_url, get_object_or_404
 from django.urls import reverse_lazy
@@ -245,7 +249,7 @@ class UserPasswordResetView(PasswordResetView):
 
 
 class PasswordResetDoneView(PasswordContextMixin, TemplateView):
-    template_name = "registration/password_reset_done.html"
+    template_name = "accounts/password_reset_done.html"
     title = _("Password reset sent")
 
 

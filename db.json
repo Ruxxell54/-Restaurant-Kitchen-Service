@@ -1,0 +1,803 @@
+[
+  {
+    "model": "kitchen.ingredient",
+    "pk": 19,
+    "fields": {
+      "name": "Anchovies"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 3,
+    "fields": {
+      "name": "Bacon"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 29,
+    "fields": {
+      "name": "Basil leaves"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 23,
+    "fields": {
+      "name": "Beef"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 5,
+    "fields": {
+      "name": "Black pepper"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 37,
+    "fields": {
+      "name": "Butter"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 33,
+    "fields": {
+      "name": "Cheese"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 8,
+    "fields": {
+      "name": "Chicken breast"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 15,
+    "fields": {
+      "name": "Chili powder"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 16,
+    "fields": {
+      "name": "Cream"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 18,
+    "fields": {
+      "name": "Croutons"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 20,
+    "fields": {
+      "name": "Dijon mustard"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 2,
+    "fields": {
+      "name": "Eggs"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 27,
+    "fields": {
+      "name": "Flour"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 13,
+    "fields": {
+      "name": "Garam masala"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 6,
+    "fields": {
+      "name": "Garlic"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 12,
+    "fields": {
+      "name": "Ginger"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 38,
+    "fields": {
+      "name": "Grilled chicken"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 21,
+    "fields": {
+      "name": "Lemon juice"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 31,
+    "fields": {
+      "name": "Lettuce"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 35,
+    "fields": {
+      "name": "Mayonnaise"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 28,
+    "fields": {
+      "name": "Mozzarella cheese"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 25,
+    "fields": {
+      "name": "Mushrooms"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 34,
+    "fields": {
+      "name": "Mustard"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 7,
+    "fields": {
+      "name": "Olive oil"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 11,
+    "fields": {
+      "name": "Onions"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 4,
+    "fields": {
+      "name": "Parmesan cheese"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 30,
+    "fields": {
+      "name": "Pepperoni"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 32,
+    "fields": {
+      "name": "Pickles"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 26,
+    "fields": {
+      "name": "Prosciutto"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 24,
+    "fields": {
+      "name": "Puff pastry"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 36,
+    "fields": {
+      "name": "Rice"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 17,
+    "fields": {
+      "name": "Romaine lettuce"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 39,
+    "fields": {
+      "name": "Sausages"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 1,
+    "fields": {
+      "name": "Spaghetti"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 10,
+    "fields": {
+      "name": "Tomatoes"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 14,
+    "fields": {
+      "name": "Turmeric"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 22,
+    "fields": {
+      "name": "Worcestershire sauce"
+    }
+  },
+  {
+    "model": "kitchen.ingredient",
+    "pk": 9,
+    "fields": {
+      "name": "Yogurt"
+    }
+  },
+  {
+    "model": "kitchen.dishtype",
+    "pk": 6,
+    "fields": {
+      "name": "Fast food"
+    }
+  },
+  {
+    "model": "kitchen.dishtype",
+    "pk": 2,
+    "fields": {
+      "name": "Indian curry"
+    }
+  },
+  {
+    "model": "kitchen.dishtype",
+    "pk": 4,
+    "fields": {
+      "name": "Main course"
+    }
+  },
+  {
+    "model": "kitchen.dishtype",
+    "pk": 1,
+    "fields": {
+      "name": "Pasta"
+    }
+  },
+  {
+    "model": "kitchen.dishtype",
+    "pk": 5,
+    "fields": {
+      "name": "Pizza"
+    }
+  },
+  {
+    "model": "kitchen.dishtype",
+    "pk": 3,
+    "fields": {
+      "name": "Salad"
+    }
+  },
+  {
+    "model": "kitchen.cook",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$ik92NbqYwnToywL25RL8X0$4sxpz8ZK2M72bV0ofRhm0m9raztdeHzgUMcYGpS9ykY=",
+      "last_login": "2024-04-05T17:22:37.773Z",
+      "is_superuser": true,
+      "username": "admin2",
+      "first_name": "",
+      "last_name": "",
+      "email": "admin2@admin.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-04-05T17:20:32.847Z",
+      "prax_years": 0,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "kitchen.cook",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$qNIp5eBaGhpFrgth4cK0hw$QuaJVC5Z42ra3NddET4W60r2A0h0nS29+CavIMMNtV4=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Peter_S",
+      "first_name": "Peter",
+      "last_name": "Shevchenko",
+      "email": "peter@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-04-05T18:08:36.434Z",
+      "prax_years": 5,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "kitchen.cook",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$O2HAQkfNDpKl8j9JtP97CI$bZL1vKOBvQsD7m+hilXTBltg2So+L19OgLUs+dfTem4=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Pavol",
+      "first_name": "Pavol",
+      "last_name": "Zbignev",
+      "email": "pavol@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-04-05T18:10:12.582Z",
+      "prax_years": 3,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "kitchen.cook",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$2RCLo4BbuPWvgg8UpydsWW$xjdf2m7VGgluR0QVpF1e9WhV73JzNgg2AXS1uf7cVvw=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Poul_P",
+      "first_name": "Poul",
+      "last_name": "Prinston",
+      "email": "poul@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-04-05T18:11:10.650Z",
+      "prax_years": 4,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "kitchen.cook",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$l1JlHAHQe8wFsVqpFH7vQm$Pq5+1LZVOJc6+tteTAwSvR+S0KcqBNTBTs53d3WlW7Y=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Victor_S",
+      "first_name": "Victor",
+      "last_name": "Speed",
+      "email": "victor@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-04-05T18:11:56.554Z",
+      "prax_years": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "kitchen.cook",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$IbuxeDARabuHKJQS9TJR1r$+seSkS1hQ8cRzg2MnKdhZgpfBBFRf7wPvicGHm5x7O8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Nataly_Q",
+      "first_name": "Nataly",
+      "last_name": "Quick",
+      "email": "nataly@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-04-05T18:13:01.869Z",
+      "prax_years": 6,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "kitchen.cook",
+    "pk": 7,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$TNJWmsbx3lod0ch3xIDovk$atvjVOXXmeGR+q+mSDDoVVU2tRzVu2QlinXLcUXnsuk=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Liz_S",
+      "first_name": "Liz",
+      "last_name": "Strong",
+      "email": "liz@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-04-05T18:14:34.298Z",
+      "prax_years": 5,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "kitchen.cook",
+    "pk": 8,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$YFtKwpw7ikFOUksT07mhmL$H3uM/rjB3kQXh2YSXrmlaHHQVLIpdh7amEIQrDnoH6M=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Johan_S",
+      "first_name": "Johan",
+      "last_name": "Strict",
+      "email": "johan@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-04-05T18:15:45Z",
+      "prax_years": 7,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "kitchen.cook",
+    "pk": 9,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$aL6SEcoLfRIi8wsULdSu3t$iIyMynNoDIb+MlsDnbMsZNxSzeYGSeOwygyanPUK8Ik=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Martin_T",
+      "first_name": "Martin",
+      "last_name": "Team",
+      "email": "martin@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-04-05T18:16:36.960Z",
+      "prax_years": 2,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "kitchen.cook",
+    "pk": 10,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$yrGtXxmbZ3WXT9nXrGHtqI$tMYlFK/Upwn5RtgL8dR1/d8k1M7DdKPiQnh8FfptNwk=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Sisil_F",
+      "first_name": "Sisil",
+      "last_name": "Fast",
+      "email": "sisil@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-04-05T18:17:18.377Z",
+      "prax_years": 6,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "kitchen.cook",
+    "pk": 11,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$oqrJN3axyRoxgZsxbjqXQ8$G/95CmxWW+s2l/J7TOU4R9mczUxhNhcrSeKEfsMhLtU=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Maria_L",
+      "first_name": "Maria",
+      "last_name": "Light",
+      "email": "maria@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-04-05T18:19:13.262Z",
+      "prax_years": 4,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 1,
+    "fields": {
+      "name": "Spaghetti Carbonara",
+      "description": "A classic Italian pasta dish, spaghetti carbonara is known for its creamy sauce made with eggs, Parmesan cheese, and pancetta or bacon. The sauce is gently cooked with the hot pasta to create a rich and comforting dish, often finished with a generous sprinkle of black pepper.",
+      "price": "9.90",
+      "dish_type": 1,
+      "cooks": [
+        7
+      ],
+      "ingredients": [
+        3,
+        5,
+        2,
+        6,
+        7,
+        4
+      ]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 2,
+    "fields": {
+      "name": "Chicken Tikka Masala",
+      "description": "A popular Indian curry dish, chicken tikka masala features tender pieces of chicken cooked in a creamy and flavorful tomato-based sauce. With a blend of aromatic spices like garam masala, turmeric, and cumin, this dish offers a delightful balance of savory and slightly spicy flavors.",
+      "price": "14.80",
+      "dish_type": 2,
+      "cooks": [
+        2,
+        6
+      ],
+      "ingredients": [
+        8,
+        15,
+        16,
+        13,
+        6,
+        12,
+        11,
+        10,
+        14,
+        9
+      ]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 3,
+    "fields": {
+      "name": "Caesar Salad",
+      "description": "A refreshing salad consisting of crisp romaine lettuce, crunchy croutons, and savory Parmesan cheese, tossed in a tangy Caesar dressing. The dressing, made with anchovies, garlic, lemon juice, and olive oil, adds a zesty kick to this classic salad.",
+      "price": "8.90",
+      "dish_type": 3,
+      "cooks": [
+        3,
+        5,
+        6,
+        8,
+        10,
+        11
+      ],
+      "ingredients": [
+        19,
+        18,
+        20,
+        2,
+        6,
+        21,
+        7,
+        4,
+        17,
+        22
+      ]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 4,
+    "fields": {
+      "name": "Beef Wellington",
+      "description": "A sophisticated main course, beef Wellington showcases a tender beef tenderloin coated in a layer of savory mushroom duxelles and wrapped in golden puff pastry. This elegant dish is often served with a rich demi-glace or red wine reduction.",
+      "price": "16.20",
+      "dish_type": 4,
+      "cooks": [
+        7,
+        11
+      ],
+      "ingredients": [
+        23,
+        20,
+        2,
+        25,
+        26,
+        24
+      ]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 5,
+    "fields": {
+      "name": "Margherita",
+      "description": "A classic Italian pizza, the Margherita is simplicity at its finest. Topped with a vibrant tomato sauce, creamy mozzarella cheese, and fragrant basil leaves, this pizza celebrates the colors of the Italian flag. Drizzled with olive oil and sprinkled with salt, the Margherita pizza offers a perfect balance of flavors and textures.",
+      "price": "7.90",
+      "dish_type": 5,
+      "cooks": [
+        4,
+        5,
+        10
+      ],
+      "ingredients": [
+        29,
+        2,
+        27,
+        28,
+        7,
+        10
+      ]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 6,
+    "fields": {
+      "name": "Pepperoni",
+      "description": "A beloved American favorite, pepperoni pizza is a delicious combination of savory tomato sauce, gooey melted mozzarella cheese, and spicy slices of pepperoni. With its irresistible blend of flavors and satisfyingly chewy crust, pepperoni pizza is a timeless classic that never fails to please pizza lovers of all ages.",
+      "price": "10.20",
+      "dish_type": 5,
+      "cooks": [
+        4,
+        7,
+        8,
+        9
+      ],
+      "ingredients": [
+        2,
+        27,
+        28,
+        7,
+        30,
+        10
+      ]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 7,
+    "fields": {
+      "name": "Hamburger",
+      "description": "A quintessential American fast food favorite, a hamburger consists of a juicy beef patty sandwiched between a soft hamburger bun and topped with lettuce, tomato, onion, pickles, and condiments like ketchup, mustard, and mayonnaise. Served with a side of crispy fries, a hamburger is a satisfying and classic comfort food.",
+      "price": "7.35",
+      "dish_type": 6,
+      "cooks": [
+        4,
+        5,
+        6,
+        10
+      ],
+      "ingredients": [
+        23,
+        33,
+        2,
+        27,
+        31,
+        35,
+        34,
+        11,
+        32,
+        10
+      ]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 8,
+    "fields": {
+      "name": "Mushroom Risotto",
+      "description": "An Italian rice dish, mushroom risotto features creamy Arborio rice cooked with earthy mushrooms, onions, and garlic, and finished with a splash of white wine and a generous sprinkling of Parmesan cheese. With its luxurious texture and rich flavors, mushroom risotto makes for a comforting and elegant meal.",
+      "price": "17.30",
+      "dish_type": 4,
+      "cooks": [
+        2,
+        3,
+        5,
+        11
+      ],
+      "ingredients": [
+        37,
+        6,
+        25,
+        11,
+        4,
+        36
+      ]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 9,
+    "fields": {
+      "name": "Chicken Caesar Wrap",
+      "description": "A convenient and portable version of the classic Caesar salad, a chicken Caesar wrap features grilled chicken, crisp romaine lettuce, crunchy croutons, and Parmesan cheese wrapped in a soft tortilla. Drizzled with creamy Caesar dressing, this handheld meal is perfect for on-the-go enjoyment.",
+      "price": "12.20",
+      "dish_type": 3,
+      "cooks": [
+        2,
+        7,
+        9
+      ],
+      "ingredients": [
+        18,
+        38,
+        31,
+        4
+      ]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 10,
+    "fields": {
+      "name": "Cheeseburger",
+      "description": "This classic American fast food favorite consists of a grilled beef patty, cheese, lettuce, tomatoes, onions, ketchup, and mustard, all sandwiched between a soft bun.",
+      "price": "6.30",
+      "dish_type": 6,
+      "cooks": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "ingredients": [
+        23,
+        33,
+        2,
+        27,
+        31,
+        34,
+        11,
+        10
+      ]
+    }
+  },
+  {
+    "model": "kitchen.dish",
+    "pk": 11,
+    "fields": {
+      "name": "Hot Dog",
+      "description": "An American favorite consisting of a grilled or steamed sausage served in a soft bun and topped with various condiments.",
+      "price": "4.90",
+      "dish_type": 6,
+      "cooks": [
+        2,
+        3,
+        4,
+        6,
+        8,
+        9
+      ],
+      "ingredients": [
+        2,
+        27,
+        34,
+        11,
+        32,
+        39
+      ]
+    }
+  }
+]
